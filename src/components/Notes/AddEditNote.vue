@@ -39,8 +39,8 @@ defineExpose({
         <div class="field">
             <label v-if="label" class="label has-text-white">{{ label }}</label>
             <div class="control">
-                <textarea class="textarea" :placeholder="placeholder" v-model="modelValue"
-                    @input="$emit('update:modelValue', modelValue)" ref="contentNoteRef" v-autofocus />
+                <textarea class="textarea" :placeholder="placeholder" :value="modelValue"
+                    @input="$emit('update:modelValue', $event.target.value)" ref="contentNoteRef" v-autofocus />
             </div>
         </div>
 

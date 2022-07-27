@@ -36,8 +36,10 @@ onClickOutside(navbarMenuRef, (event) => {
                 ref="navbarMenuRef">
 
                 <div class="navbar-end">
-                    <RouterLink to="/" class="navbar-item" active-class="is-active">Notes</RouterLink>
-                    <RouterLink to="/stats" class="navbar-item" active-class="is-active">Stats</RouterLink>
+                    <RouterLink to="/" class="navbar-item" active-class="is-active" @click="isShowMobileNav = false">
+                        Notes</RouterLink>
+                    <RouterLink to="/stats" class="navbar-item" active-class="is-active"
+                        @click="isShowMobileNav = false">Stats</RouterLink>
                 </div>
             </div>
         </div>

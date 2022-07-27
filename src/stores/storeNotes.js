@@ -20,7 +20,7 @@ export const useStoreNotes = defineStore("storeNotes", {
   actions: {
     addNote(content) {
       this.notes.unshift({
-        id: Date.now(),
+        id: Date.now().toString(),
         content,
       });
     },
